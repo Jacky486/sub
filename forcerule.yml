@@ -32,6 +32,8 @@ dns:
   nameserver:
      - tls://dns.google:853
      - https://dns.google/dns-query
+     - tls://rubyfish.cn:853
+     - https://rubyfish.cn/dns-query
 rules:
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
