@@ -30,10 +30,10 @@ dns:
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
   nameserver:
-     - tls://dns.google:853
-     - https://dns.google/dns-query
-     - tls://rubyfish.cn:853
-     - https://rubyfish.cn/dns-query
+     - tls://one.one.one.one:853
+     - https://one.one.one.one/dns-query
+     - tls://dns.alidns.com:853
+     - https://dns.alidns.com/dns-query
 rules:
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
