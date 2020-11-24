@@ -38,6 +38,9 @@ dns:
      - 'stun.*.*'
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
+     - 'lens.*.*'
+     - 'lens.*.*.*'
+     - 'lens.*.*.*.*'
 rules:
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
