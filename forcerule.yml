@@ -30,17 +30,17 @@ dns:
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
   nameserver:
-     - tls://one.one.one.one:853
+     - 1.1.1.1
+     - 223.5.5.5
+  fallback:
      - https://one.one.one.one/dns-query
-     - tls://dns.alidns.com:853
-     - https://dns.alidns.com/dns-query
+     - https://dns.alidns.com/dns-query 
+  fallback-filter:
+    geoip: true 
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
-     - 'lens.*.*'
-     - 'lens.*.*.*'
-     - 'lens.*.*.*.*'
 rules:
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
