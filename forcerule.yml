@@ -34,7 +34,7 @@ dns:
      - https://one.one.one.one/dns-query
      - tls://dns.alidns.com:853
      - https://dns.alidns.com/dns-query
-   fake-ip-filter:
+  fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
