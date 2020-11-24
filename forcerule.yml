@@ -34,9 +34,7 @@ dns:
      - 223.5.5.5
   fallback:
      - https://one.one.one.one/dns-query
-     - https://dns.alidns.com/dns-query 
-  fallback-filter:
-    geoip: true 
+     - https://dns.alidns.com/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
