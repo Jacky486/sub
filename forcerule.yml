@@ -32,8 +32,8 @@ dns:
   nameserver:
      - tls://one.one.one.one:853
      - https://one.one.one.one/dns-query
-     #- tls://dns.alidns.com:853
-     #- https://dns.alidns.com/dns-query
+     - tls://dns.google:853
+     - https://dns.google/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
