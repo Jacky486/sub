@@ -5,7 +5,7 @@ mixed-port: 7890
 # redir-port: 7892
 
 # 允许局域网的连接（可用来共享代理）
-allow-lan: true
+allow-lan: false
 
 # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）
 mode: rule
@@ -39,6 +39,7 @@ dns:
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
 rules:
+- PROCESS-NAME,bittorrent,DIRECT
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
 - DOMAIN,apm3.music.163.com,🎵netease
