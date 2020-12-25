@@ -39,7 +39,7 @@ dns:
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
 rules:
-- PROCESS-NAME,bittorrent,DIRECT
+- PROCESS-NAME,qbittorrent.exe,DIRECT
 # Unblock NeteaseMusic
 - DOMAIN,api.iplay.163.com,🎵netease
 - DOMAIN,apm3.music.163.com,🎵netease
