@@ -10504,6 +10504,9 @@ rules:
 - DOMAIN-SUFFIX,gamer.com.tw,💕动画疯
 - DOMAIN,gamer-cds.cdn.hinet.net,💕动画疯
 - DOMAIN,gamer2-cds.cdn.hinet.net,💕动画疯
+- IP-CIDR,23.21.76.253/32,💕动画疯
+- IP-CIDR,104.16.181.30/32,💕动画疯
+- IP-CIDR,13.226.77.38/32,💕动画疯
 # > BBC iPlayer
 # USER-AGENT,BBCiPlayer*,🌍国际媒体
 - DOMAIN-SUFFIX,bbc.co.uk,🌍国际媒体
