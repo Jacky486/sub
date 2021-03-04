@@ -10531,20 +10531,20 @@ rules:
 - DOMAIN-SUFFIX,dssott.com,📀Disney+
 - DOMAIN,cdn.registerdisney.go.com,📀Disney+
 # > encoreTVB
-# USER-AGENT,encoreTVB*,🎞新港台影视
-- DOMAIN-SUFFIX,encoretvb.com,🎞新港台影视
-- DOMAIN,edge.api.brightcove.com,🎞新港台影视
-- DOMAIN,bcbolt446c5271-a.akamaihd.net,🎞新港台影视
-# >  🎞新港台影视 & Fox Now
-# USER-AGENT,FOX%20NOW*, 🎞新港台影视
-# USER-AGENT,FOXPlus*, 🎞新港台影视
-- DOMAIN-SUFFIX,dashasiafox.akamaized.net, 🎞新港台影视
-- DOMAIN-SUFFIX,fox.com, 🎞新港台影视
-- DOMAIN-SUFFIX,foxdcg.com, 🎞新港台影视
-- DOMAIN-SUFFIX,foxplus.com, 🎞新港台影视
-- DOMAIN-SUFFIX,staticasiafox.akamaized.net, 🎞新港台影视
-- DOMAIN-SUFFIX,theplatform.com, 🎞新港台影视
-- DOMAIN-SUFFIX,uplynk.com, 🎞新港台影视
+# USER-AGENT,encoreTVB*,🌍国际媒体
+- DOMAIN-SUFFIX,encoretvb.com,🌍国际媒体
+- DOMAIN,edge.api.brightcove.com,🌍国际媒体
+- DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍国际媒体
+# >  🌍国际媒体 & Fox Now
+# USER-AGENT,FOX%20NOW*, 🌍国际媒体
+# USER-AGENT,FOXPlus*, 🌍国际媒体
+- DOMAIN-SUFFIX,dashasiafox.akamaized.net, 🌍国际媒体
+- DOMAIN-SUFFIX,fox.com, 🌍国际媒体
+- DOMAIN-SUFFIX,foxdcg.com, 🌍国际媒体
+- DOMAIN-SUFFIX,foxplus.com, 🌍国际媒体
+- DOMAIN-SUFFIX,staticasiafox.akamaized.net, 🌍国际媒体
+- DOMAIN-SUFFIX,theplatform.com, 🌍国际媒体
+- DOMAIN-SUFFIX,uplynk.com, 🌍国际媒体
 # > HBO Now & HBO GO
 # USER-AGENT,HBO%20NOW*,🎞HBO
 # USER-AGENT,HBO%20GO*,🎞HBO
@@ -10607,21 +10607,21 @@ rules:
 - DOMAIN-SUFFIX,kktv.me,🌍国际媒体
 - DOMAIN,kktv-theater.kk.stream,🌍国际媒体
 # > Line TV
-# USER-AGENT,LINE%20TV*,🎞新港台影视
-- DOMAIN-SUFFIX,linetv.tw,🎞新港台影视
-- DOMAIN,d3c7rimkq79yfu.cloudfront.net,🎞新港台影视
+# USER-AGENT,LINE%20TV*,🌍国际媒体
+- DOMAIN-SUFFIX,linetv.tw,🌍国际媒体
+- DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍国际媒体
 # > LiTV
-- DOMAIN-SUFFIX,litv.tv,🎞新港台影视
-- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🎞新港台影视
+- DOMAIN-SUFFIX,litv.tv,🌍国际媒体
+- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍国际媒体
 # > My5
 # USER-AGENT,My5*,GlobalMedia
 - DOMAIN-SUFFIX,channel5.com,🌍国际媒体
 - DOMAIN-SUFFIX,my5.tv,🌍国际媒体
 - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍国际媒体
 # > myTV_SUPER
-# USER-AGENT,mytv*,🎞新港台影视
-- DOMAIN-SUFFIX,mytvsuper.com,🎞新港台影视
-- DOMAIN-SUFFIX,tvb.com,🎞新港台影视
+# USER-AGENT,mytv*,🌍国际媒体
+- DOMAIN-SUFFIX,mytvsuper.com,🌍国际媒体
+- DOMAIN-SUFFIX,tvb.com,🌍国际媒体
 # > Netflix
 # USER-AGENT,Argo*,🎥netflix
 - DOMAIN,netflix.com.edgesuite.net,🎥netflix
@@ -11576,22 +11576,22 @@ rules:
 - DOMAIN-SUFFIX,ttvnw.net,🌍国际媒体
 - DOMAIN-SUFFIX,jtvnw.net,🌍国际媒体
 # > ViuTV
-# - USER-AGENT,ViuTV*,🎞新港台影视
-- DOMAIN-SUFFIX,bootstrapcdn.com,🎞新港台影视
-- DOMAIN-SUFFIX,cloudfront.net,🎞新港台影视
-- DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🎞新港台影视
-- DOMAIN-SUFFIX,firebaseio.com,🎞新港台影视
-- DOMAIN-SUFFIX,jwpcdn.com,🎞新港台影视
-- DOMAIN-SUFFIX,jwplayer.com,🎞新港台影视
-- DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🎞新港台影视
-- DOMAIN-SUFFIX,nowe.com,🎞新港台影视
-- DOMAIN-SUFFIX,viu.com,🎞新港台影视
-- DOMAIN-SUFFIX,viu.tv,🎞新港台影视
-- DOMAIN-SUFFIX,viu.now.com,🎞新港台影视
-- DOMAIN,api.viu.now.com,🎞新港台影视
-- DOMAIN,d1k2us671qcoau.cloudfront.net,🎞新港台影视
-- DOMAIN,d2anahhhmp1ffz.cloudfront.net,🎞新港台影视
-- DOMAIN,dfp6rglgjqszk.cloudfront.net,🎞新港台影视
+# - USER-AGENT,ViuTV*,🌍国际媒体
+- DOMAIN-SUFFIX,bootstrapcdn.com,🌍国际媒体
+- DOMAIN-SUFFIX,cloudfront.net,🌍国际媒体
+- DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍国际媒体
+- DOMAIN-SUFFIX,firebaseio.com,🌍国际媒体
+- DOMAIN-SUFFIX,jwpcdn.com,🌍国际媒体
+- DOMAIN-SUFFIX,jwplayer.com,🌍国际媒体
+- DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍国际媒体
+- DOMAIN-SUFFIX,nowe.com,🌍国际媒体
+- DOMAIN-SUFFIX,viu.com,🌍国际媒体
+- DOMAIN-SUFFIX,viu.tv,🌍国际媒体
+- DOMAIN-SUFFIX,viu.now.com,🌍国际媒体
+- DOMAIN,api.viu.now.com,🌍国际媒体
+- DOMAIN,d1k2us671qcoau.cloudfront.net,🌍国际媒体
+- DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍国际媒体
+- DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍国际媒体
 # > Youtube
 # USER-AGENT,com.google.ios.youtube*,🌌google
 # USER-AGENT,YouTube*,🌌google
