@@ -30,11 +30,10 @@ dns:
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
   nameserver:
-     #- tls://1.1.1.1:853
-     #- https://1.1.1.1/dns-query
-     #- tls://1.0.0.1:853
-     #- https://1.0.0.1/dns-query
-     - 127.0.0.1:5354
+     - tls://1.1.1.1:853
+     - https://1.1.1.1/dns-query
+     - tls://1.0.0.1:853
+     - https://1.0.0.1/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
