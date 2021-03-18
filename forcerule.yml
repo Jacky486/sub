@@ -10592,9 +10592,15 @@ rules:
 - DOMAIN-SUFFIX,hulu.com,📀Hulu
 - DOMAIN-SUFFIX,huluim.com,📀Hulu
 - DOMAIN-SUFFIX,hulustream.com,📀Hulu
+- DOMAIN-SUFFIX,hulu.hb.omtrdc.net,📀Hulu
+- DOMAIN-SUFFIX,hulu.sc.omtrdc.net,📀Hulu
+- DOMAIN-SUFFIX,cws-hulu.conviva.com,📀Hulu
 # > Hulu(フールー)
 - DOMAIN-SUFFIX,happyon.jp,📀Hulu
 - DOMAIN-SUFFIX,hulu.jp,📀Hulu
+- DOMAIN-SUFFIX,prod.hjholdings.tv,📀Hulu
+- DOMAIN-SUFFIX,streaks.jp,📀Hulu
+- DOMAIN-SUFFIX,yb.uncn.jp,📀Hulu
 # > ITV
 # USER-AGENT,ITV_Player*,🌍国际媒体
 - DOMAIN-SUFFIX,itv.com,🌍国际媒体
