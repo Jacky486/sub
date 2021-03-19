@@ -28,16 +28,16 @@ dns:
   enable: true
   ipv6: false
   listen: 127.0.0.1:5450
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   nameserver:
      - tls://1.1.1.1:853
      - https://1.1.1.1/dns-query
      - tls://1.0.0.1:853
      - https://1.0.0.1/dns-query
-  fake-ip-filter:
-     - 'stun.*.*'
-     - 'stun.*.*.*'
-     - 'stun.*.*.*.*'
+#  fake-ip-filter:
+#     - 'stun.*.*'
+#     - 'stun.*.*.*'
+#     - 'stun.*.*.*.*'
 rules:
 - PROCESS-NAME,PicoTorrent.exe,DIRECT
 # Unblock NeteaseMusic
