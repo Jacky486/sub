@@ -23,6 +23,7 @@ external-controller: 127.0.0.1:9090
 
 # RESTful API 的口令 (可选)
 # secret: ""
+
 # DNS 设置
 dns:
   enable: true
@@ -36,68 +37,9 @@ dns:
 #     - 'stun.*.*'
 #     - 'stun.*.*.*'
 #     - 'stun.*.*.*.*'
+
 rules:
 - PROCESS-NAME,qbittorrent.exe,DIRECT
-# Unblock NeteaseMusic
-- DOMAIN,api.iplay.163.com,🎵netease
-- DOMAIN,apm3.music.163.com,🎵netease
-- DOMAIN,apm.music.163.com,🎵netease
-- DOMAIN,interface3.music.163.com,🎵netease
-- DOMAIN,interface.music.163.com,🎵netease
-- DOMAIN,music.163.com,🎵netease
-- IP-CIDR,39.105.63.80/32,🎵netease
-- IP-CIDR,45.254.48.1/32,🎵netease
-- IP-CIDR,47.100.127.239/32,🎵netease
-- IP-CIDR,59.111.160.195/32,🎵netease
-- IP-CIDR,59.111.160.197/32,🎵netease
-- IP-CIDR,59.111.181.35/32,🎵netease
-- IP-CIDR,59.111.181.38/32,🎵netease
-- IP-CIDR,59.111.181.60/32,🎵netease
-- IP-CIDR,101.71.154.241/32,🎵netease
-- IP-CIDR,103.126.92.132/32,🎵netease
-- IP-CIDR,103.126.92.133/32,🎵netease
-- IP-CIDR,112.13.119.17/32,🎵netease
-- IP-CIDR,112.13.122.1/32,🎵netease
-- IP-CIDR,115.236.118.33/32,🎵netease
-- IP-CIDR,115.236.121.1/32,🎵netease
-- IP-CIDR,118.24.63.156/32,🎵netease
-- IP-CIDR,193.112.159.225/32,🎵netease
-- IP-CIDR,223.252.199.66/32,🎵netease
-- IP-CIDR,223.252.199.67/32,🎵netease
-- IP-CIDR,223.252.199.67/32,🎵netease
-# (国内媒体)
-# > 愛奇藝台灣站
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,71.am,DIRECT
-- DOMAIN-KEYWORD,qiyi,DIRECT
-- DOMAIN-SUFFIX,qy.net,DIRECT
-- IP-CIDR,101.227.0.0/16,DIRECT
-- IP-CIDR,101.224.0.0/13,DIRECT
-- IP-CIDR,119.176.0.0/12,DIRECT
-# > bilibili
-- IP-CIDR,150.116.92.250/32,🇨🇳国内媒体
-- IP-CIDR,164.52.110.14/32,🇨🇳国内媒体
-- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
-- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.200/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.199/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.201/32,🇨🇳国内媒体
-- DOMAIN-SUFFIX,hdslb.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,acgvideo.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilivideo.com,🇨🇳国内媒体
-- DOMAIN,upos-hz-mirrorakam.akamaized.net,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bangumi.bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,api.bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,acg.tv,🇨🇳国内媒体
-- DOMAIN-SUFFIX,b23.tv,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biliapi.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biliapi.net,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilibili.tv,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biligame.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biligame.net,🇨🇳国内媒体
-- DOMAIN-SUFFIX,im9.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,apm-misaka.biliapi.net,🇨🇳国内媒体
 # Privacy
 - DOMAIN-SUFFIX,247-inc.net,⛔️屏蔽广告
 - DOMAIN-SUFFIX,42trck.com,⛔️屏蔽广告
@@ -766,7 +708,6 @@ rules:
 - DOMAIN,adcdn.hpplay.cn,⛔️屏蔽广告
 - DOMAIN,adeng.hpplay.cn,⛔️屏蔽广告
 - DOMAIN,rp.hpplay.cn,⛔️屏蔽广告
-
 # (J),⛔️屏蔽广告
 # > Kingsoft,⛔️屏蔽广告
 - DOMAIN,ad-stat.ksosoft.com,⛔️屏蔽广告
@@ -777,7 +718,6 @@ rules:
 - DOMAIN,mobad.ijinshan.com,⛔️屏蔽广告
 - DOMAIN,ups.ksmobile.net,⛔️屏蔽广告
 - DOMAIN,ws.ksmobile.net,⛔️屏蔽广告
-
 # (L),⛔️屏蔽广告
 # > Le,⛔️屏蔽广告
 - DOMAIN-SUFFIX,webp2p.letv.com,⛔️屏蔽广告
@@ -789,7 +729,6 @@ rules:
 - DOMAIN,a.wkanx.com,⛔️屏蔽广告
 - DOMAIN,cwx.lianwangtech.com,⛔️屏蔽广告
 - DOMAIN,c1wx.lianwangtech.com,⛔️屏蔽广告
-
 # (M),⛔️屏蔽广告
 # > MI,⛔️屏蔽广告
 - DOMAIN-SUFFIX,ad.intl.xiaomi.com,⛔️屏蔽广告
@@ -802,7 +741,6 @@ rules:
 - DOMAIN,adlaunch.moji.com,⛔️屏蔽广告
 - DOMAIN,ads.mojicdn.com,⛔️屏蔽广告
 - DOMAIN,v1.log.moji.com,⛔️屏蔽广告
-
 # (N),⛔️屏蔽广告
 # > NetEase,⛔️屏蔽广告
 - DOMAIN-SUFFIX,dsp.youdao.com,⛔️屏蔽广告
@@ -821,7 +759,6 @@ rules:
 - DOMAIN,nex.163.com,⛔️屏蔽广告
 - DOMAIN,yt-adp.nosdn.127.net,⛔️屏蔽广告
 - DOMAIN,yt-adp.ws.126.net,⛔️屏蔽广告
-
 # (P),⛔️屏蔽广告
 # > PPTV,⛔️屏蔽广告
 - DOMAIN,ads.aplus.pptv.com,⛔️屏蔽广告
@@ -845,7 +782,6 @@ rules:
 - DOMAIN-SUFFIX,deliver.ifeng.com,⛔️屏蔽广告
 - DOMAIN,api.newad.ifeng.com,⛔️屏蔽广告
 - DOMAIN,ifengad.3g.ifeng.com,⛔️屏蔽广告
-
 # (S),⛔️屏蔽广告
 # > Sina,⛔️屏蔽广告
 - DOMAIN-SUFFIX,beacon.sina.com.cn,⛔️屏蔽广告
@@ -862,7 +798,6 @@ rules:
 - DOMAIN,imp.optaim.com,⛔️屏蔽广告
 - DOMAIN,v2.reachmax.cn,⛔️屏蔽广告
 - DOMAIN,hui.sohu.com,⛔️屏蔽广告
-
 # (T),⛔️屏蔽广告
 # --- (Tencent) ---,⛔️屏蔽广告
 - DOMAIN-SUFFIX,e.qq.com,⛔️屏蔽广告
@@ -900,7 +835,6 @@ rules:
 # > Thunder,⛔️屏蔽广告
 - DOMAIN,adsp.xunlei.com,⛔️屏蔽广告
 - DOMAIN,etl.xlmc.sandai.net,⛔️屏蔽广告
-
 # (X),⛔️屏蔽广告
 # > Ximalaya,⛔️屏蔽广告
 - DOMAIN,ad.ximalaya.com,⛔️屏蔽广告
@@ -914,7 +848,6 @@ rules:
 - DOMAIN,ads-img-qc.xhscdn.com,⛔️屏蔽广告
 - DOMAIN,ads-video-qc.xhscdn.com,⛔️屏蔽广告
 - DOMAIN,t-ads.xiaohongshu.com,⛔️屏蔽广告
-
 # (Y),⛔️屏蔽广告
 # > Yahoo,⛔️屏蔽广告
 - DOMAIN-SUFFIX,adserver.yahoo.com,⛔️屏蔽广告
@@ -927,16 +860,13 @@ rules:
 - DOMAIN,ads.finance.yahoo.com,⛔️屏蔽广告
 - DOMAIN,ads.yahoo.com,⛔️屏蔽广告
 - DOMAIN,ads.yahoo.de,⛔️屏蔽广告
-
 # (Z),⛔️屏蔽广告
 # > ZOL,⛔️屏蔽广告
 - DOMAIN,apppv.zol.com.cn,⛔️屏蔽广告
 - DOMAIN,pvnapp.zol.com.cn,⛔️屏蔽广告
-
 - DOMAIN-KEYWORD,adservice,⛔️屏蔽广告
 - DOMAIN-KEYWORD,analytics,⛔️屏蔽广告
 - DOMAIN-KEYWORD,analysis,⛔️屏蔽广告
-
 - DOMAIN,42trck.com,⛔️屏蔽广告
 - DOMAIN,51.la,⛔️屏蔽广告
 - DOMAIN,adcolony.com,⛔️屏蔽广告
@@ -1005,7 +935,6 @@ rules:
 - DOMAIN,vungle.com,⛔️屏蔽广告
 - DOMAIN,wedolook.com,⛔️屏蔽广告
 - DOMAIN,xdrig.com,⛔️屏蔽广告
-
 - DOMAIN,ad.daum.net,⛔️屏蔽广告
 - DOMAIN,track.xiachufang.com,⛔️屏蔽广告
 - DOMAIN,abema-adx.ameba.jp,⛔️屏蔽广告
@@ -1048,7 +977,6 @@ rules:
 - DOMAIN,trackapp.guahao.cn,⛔️屏蔽广告
 - DOMAIN,traffic.mogujie.com,⛔️屏蔽广告
 - DOMAIN,wmlog.meituan.com,⛔️屏蔽广告
-
 - DOMAIN,adshow.58.com,⛔️屏蔽广告
 - DOMAIN,track.58.com,⛔️屏蔽广告
 - DOMAIN,tracklog.58.com,⛔️屏蔽广告
@@ -1065,13 +993,10 @@ rules:
 - DOMAIN,adashx4yt.m.taobao.com,⛔️屏蔽广告
 - DOMAIN,nbsdk-baichuan.alicdn.com,⛔️屏蔽广告
 - DOMAIN,tunion-api.m.taobao.com,⛔️屏蔽广告
-
 - DOMAIN,adProxy.autohome.com.cn,⛔️屏蔽广告
 - DOMAIN,rd.autohome.com.cn,⛔️屏蔽广告
 - DOMAIN,al.autohome.com.cn,⛔️屏蔽广告
 - DOMAIN,applogapi.autohome.com.cn,⛔️屏蔽广告
-
-
 - DOMAIN,baidustatic.com,⛔️屏蔽广告
 - DOMAIN,cpro.baidu.com,⛔️屏蔽广告
 - DOMAIN,pos.baidu.com,⛔️屏蔽广告
@@ -1083,26 +1008,20 @@ rules:
 - DOMAIN,mobads.baidu.com,⛔️屏蔽广告
 - DOMAIN,mobads-logs.baidu.com,⛔️屏蔽广告
 - DOMAIN,nsclick.baidu.com,⛔️屏蔽广告
-
 - DOMAIN,applog.musical.ly,⛔️屏蔽广告
 - DOMAIN,track.toutiao.com,⛔️屏蔽广告
 - DOMAIN,xlog.snssdk.com,⛔️屏蔽广告
 - DOMAIN,xlog-va.byteoversea.com,⛔️屏蔽广告
-
 - DOMAIN,adx.yiche.com,⛔️屏蔽广告
 - DOMAIN,log.ycapp.yiche.com,⛔️屏蔽广告
 - DOMAIN,advertise.baicizhan.org,⛔️屏蔽广告
 - DOMAIN,advertise.baicizhan.com,⛔️屏蔽广告
-
-
 - DOMAIN,galaxy.bjcathay.com,⛔️屏蔽广告
 - DOMAIN,mdrecv.app.cntvwb.cn,⛔️屏蔽广告
 - DOMAIN,sdapprecv.app.cntvwb.cn,⛔️屏蔽广告
 - DOMAIN,vdapprecv.app.cntvwb.cn,⛔️屏蔽广告
-
 - DOMAIN,admarket.21cn.com,⛔️屏蔽广告
 - DOMAIN,adshows.21cn.com,⛔️屏蔽广告
-
 - DOMAIN,atrace.chelaile.net.cn,⛔️屏蔽广告
 - DOMAIN,logs.chelaile.net.cn,⛔️屏蔽广告
 - DOMAIN,doubleclick.net,⛔️屏蔽广告
@@ -1467,7 +1386,6 @@ rules:
 - DOMAIN,rlogs.youdao.com,⛔️屏蔽广告
 - DOMAIN,static.flv.uuzuonline.com,⛔️屏蔽广告
 - DOMAIN,wanProxy.127.net,⛔️屏蔽广告
-
 # ›AD Block
 - DOMAIN,10up.com,⛔️屏蔽广告
 - DOMAIN,111cn.net,⛔️屏蔽广告
@@ -1853,8 +1771,6 @@ rules:
 - DOMAIN,xiongdong.com,⛔️屏蔽广告
 - DOMAIN,519397.com,⛔️屏蔽广告
 - DOMAIN,twh5.com,⛔️屏蔽广告
-
-
 # ›iqiyi
 - DOMAIN,a.ckm.iqiyi.com,⛔️屏蔽广告
 - DOMAIN,ad.m.iqiyi.com,⛔️屏蔽广告
@@ -1878,7 +1794,6 @@ rules:
 - IP-CIDR,101.227.200.28/32,⛔️屏蔽广告 
 - IP-CIDR,101.227.97.240/32,⛔️屏蔽广告 
 - IP-CIDR,124.192.153.42/32,⛔️屏蔽广告 
-
 # ›Hunan TV
 - DOMAIN,click.hunantv.com,⛔️屏蔽广告
 - DOMAIN,da.hunantv.com,⛔️屏蔽广告
@@ -1887,7 +1802,6 @@ rules:
 - DOMAIN,log.v2.hunantv.com,⛔️屏蔽广告
 - DOMAIN,res.hunantv.com,⛔️屏蔽广告
 - DOMAIN,v2.log.hunantv.com,⛔️屏蔽广告
-
 # ›Youku
 - DOMAIN,actives.youku.com,⛔️屏蔽广告
 - DOMAIN,ad.api.3g.youku.com,⛔️屏蔽广告
@@ -1944,7 +1858,6 @@ rules:
 - IP-CIDR,223.87.182.102/32,⛔️屏蔽广告 
 - IP-CIDR,223.87.182.11/32,⛔️屏蔽广告 
 - IP-CIDR,223.87.182.52/32,⛔️屏蔽广告 
-
 # ›Letv
 - DOMAIN,api.game.letvstore.com,⛔️屏蔽广告
 - DOMAIN,ark.letv.com,⛔️屏蔽广告
@@ -1959,8 +1872,6 @@ rules:
 - DOMAIN,stat.letv.com,⛔️屏蔽广告
 - DOMAIN,static.app.m.letv.com,⛔️屏蔽广告
 - DOMAIN,webp2p.letv.com,⛔️屏蔽广告
-
-
 # ›Sohu
 - DOMAIN,adnet.sohu.com,⛔️屏蔽广告
 - DOMAIN,ads.sohu.com,⛔️屏蔽广告
@@ -1976,7 +1887,6 @@ rules:
 - DOMAIN,theta.sogoucdn.com,⛔️屏蔽广告
 - DOMAIN,uranus.sogou.com,⛔️屏蔽广告
 - DOMAIN,v2.reachmax.cn,⛔️屏蔽广告
-
 # ›PPTV
 - DOMAIN,ads.aplus.pptv.com,⛔️屏蔽广告
 - DOMAIN,afp.pplive.com,⛔️屏蔽广告
@@ -1985,13 +1895,11 @@ rules:
 - DOMAIN,jp.as.pptv.com,⛔️屏蔽广告
 - DOMAIN,pp2.pptv.com,⛔️屏蔽广告
 - DOMAIN,stat.pptv.com,⛔️屏蔽广告
-
 # ›Site
 - DOMAIN,deliver.ifeng.com,⛔️屏蔽广告
 - DOMAIN,hxjs.tool.hexun.com,⛔️屏蔽广告
 - DOMAIN,hxsame.hexun.com,⛔️屏蔽广告
 - DOMAIN,itv.hexun.com,⛔️屏蔽广告
-
 # ›Vod
 - DOMAIN,ad.cmvideo.cn,⛔️屏蔽广告
 - DOMAIN,atm.cp31.ott.cibntv.net,⛔️屏蔽广告
@@ -2003,7 +1911,6 @@ rules:
 - DOMAIN,iadctest.qwapi.com,⛔️屏蔽广告
 - DOMAIN,log.moviebox.baofeng.com,⛔️屏蔽广告
 - DOMAIN,logger.baofeng.com,⛔️屏蔽广告
-
 # ›Other
 - DOMAIN,ad.video.51togic.com,⛔️屏蔽广告
 - DOMAIN,ads.cdn.tvb.com,⛔️屏蔽广告
@@ -2049,11 +1956,8 @@ rules:
 - DOMAIN,union.6.cn,⛔️屏蔽广告
 - DOMAIN,wa.gtimg.com,⛔️屏蔽广告
 - DOMAIN,bfshan.cn,⛔️屏蔽广告
-
-
 #ad
 # Ads in Video apps
-
 # > iqiyi & pps
 - DOMAIN-SUFFIX,a.ckm.iqiyi.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,ad.m.iqiyi.com,⛔️屏蔽广告
@@ -2094,7 +1998,6 @@ rules:
 - IP-CIDR,101.227.200.11/32,⛔️屏蔽广告
 - IP-CIDR,101.227.200.28/32,⛔️屏蔽广告
 - IP-CIDR,124.192.153.42/32,⛔️屏蔽广告
-
 # > Youku & Tudou
 - DOMAIN-SUFFIX,actives.youku.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,ad.api.3g.tudou.com,⛔️屏蔽广告
@@ -2154,7 +2057,6 @@ rules:
 - IP-CIDR,223.87.182.102/32,⛔️屏蔽广告
 - IP-CIDR,223.87.182.11/32,⛔️屏蔽广告
 - IP-CIDR,223.87.182.52/32,⛔️屏蔽广告
-
 # > MGTV
 - DOMAIN-SUFFIX,ads-api.videojj.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,cdn.cmop.mgtv.com,⛔️屏蔽广告
@@ -2190,7 +2092,6 @@ rules:
 - DOMAIN-SUFFIX,x1.da.hunantv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,y.da.hunantv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,y.da.mgtv.com,⛔️屏蔽广告
-
 # > Letv
 - DOMAIN-SUFFIX,1.letvlive.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,2.letvlive.com,⛔️屏蔽广告
@@ -2214,7 +2115,6 @@ rules:
 - DOMAIN-SUFFIX,static.app.m.letv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,webp2p.letv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,zamplus.com,⛔️屏蔽广告
-
 # > Youtube
 - DOMAIN-SUFFIX,azabu-u.ac.jp,⛔️屏蔽广告
 - DOMAIN-SUFFIX,couchcoaster.jp,⛔️屏蔽广告
@@ -2223,7 +2123,6 @@ rules:
 - DOMAIN-SUFFIX,m-78.jp,⛔️屏蔽广告
 - DOMAIN-SUFFIX,nichibenren.or.jp,⛔️屏蔽广告
 - DOMAIN-SUFFIX,nicorette.co.kr,⛔️屏蔽广告
-
 # > Sohu
 - DOMAIN-SUFFIX,adnet.sohu.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,aty.sohu.com,⛔️屏蔽广告
@@ -2237,7 +2136,6 @@ rules:
 - DOMAIN-SUFFIX,lu.sogoucdn.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,theta.sogoucdn.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,uranus.sogou.com,⛔️屏蔽广告
-
 # > PPTV
 - DOMAIN-SUFFIX,afp.pplive.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,app.aplus.pptv.com,⛔️屏蔽广告
@@ -2248,14 +2146,12 @@ rules:
 - DOMAIN-SUFFIX,pp2.pptv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,stat.pptv.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,static.g.pptv.com,⛔️屏蔽广告
-
 # > Site
 - DOMAIN-SUFFIX,deliver.ifeng.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,hxjs.tool.hexun.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,hxsame.hexun.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,itv.hexun.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,utrack.hexun.com,⛔️屏蔽广告
-
 # > Vod
 - DOMAIN-SUFFIX,ad.cmvideo.cn,⛔️屏蔽广告
 - DOMAIN-SUFFIX,atm.cp31.ott.cibntv.net,⛔️屏蔽广告
@@ -2264,7 +2160,6 @@ rules:
 - DOMAIN-SUFFIX,float.kankan.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,houyi.baofeng.net,⛔️屏蔽广告
 - DOMAIN-SUFFIX,iadctest.qwapi.com,⛔️屏蔽广告
-
 # > Other
 - DOMAIN-SUFFIX,ad.video.51togic.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,biz5.kankan.com,⛔️屏蔽广告
@@ -2305,9 +2200,6 @@ rules:
 - DOMAIN-SUFFIX,union.6.cn,⛔️屏蔽广告
 - DOMAIN-SUFFIX,wa.gtimg.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,bfshan.cn,⛔️屏蔽广告
-
-
-
 # Ads in apps
 - DOMAIN-KEYWORD,admaster,⛔️屏蔽广告
 - DOMAIN-KEYWORD,admdfs,⛔️屏蔽广告
@@ -2350,7 +2242,6 @@ rules:
 - DOMAIN-KEYWORD,uploadMobileData,⛔️屏蔽广告
 - DOMAIN-KEYWORD,wlmonitor,⛔️屏蔽广告
 - DOMAIN-KEYWORD,zjtoolbar,⛔️屏蔽广告
-
 - DOMAIN-SUFFIX,0.r.msn.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,000dn.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,001union.com,⛔️屏蔽广告
@@ -10307,7 +10198,6 @@ rules:
 - DOMAIN-SUFFIX,zzy1.quyaoya.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,zzz7.52896368.com,⛔️屏蔽广告
 - DOMAIN-SUFFIX,zzzzz4.52896368.com,⛔️屏蔽广告
-
 - IP-CIDR,1.3.0.10/32,⛔️屏蔽广告
 - IP-CIDR,10.72.25.0/24,⛔️屏蔽广告
 - IP-CIDR,101.201.29.182/32,⛔️屏蔽广告
@@ -10464,170 +10354,51 @@ rules:
 - IP-CIDR,69.28.57.245/32,⛔️屏蔽广告
 - IP-CIDR,74.117.182.77/32,⛔️屏蔽广告
 - IP-CIDR,78.140.131.214/32,⛔️屏蔽广告
+# Internet Service Provider ⛔️屏蔽广告 运营商劫持
+- IP-CIDR,39.107.15.115/32,⛔️屏蔽广告
+- IP-CIDR,47.89.59.182/32,⛔️屏蔽广告
+- IP-CIDR,103.49.209.27/32,⛔️屏蔽广告
+- IP-CIDR,123.56.152.96/32,⛔️屏蔽广告
+# > ChinaNet
+- IP-CIDR,61.160.200.223/32,⛔️屏蔽广告
+- IP-CIDR,61.160.200.242/32,⛔️屏蔽广告
+- IP-CIDR,61.160.200.252/32,⛔️屏蔽广告
+- IP-CIDR,61.174.50.214/32,⛔️屏蔽广告
+- IP-CIDR,111.175.220.163/32,⛔️屏蔽广告
+- IP-CIDR,111.175.220.164/32,⛔️屏蔽广告
+- IP-CIDR,124.232.160.178/32,⛔️屏蔽广告
+- IP-CIDR,175.6.223.15/32,⛔️屏蔽广告
+- IP-CIDR,183.59.53.237/32,⛔️屏蔽广告
+- IP-CIDR,218.93.127.37/32,⛔️屏蔽广告
+- IP-CIDR,221.228.17.152/32,⛔️屏蔽广告
+- IP-CIDR,221.231.6.79/32,⛔️屏蔽广告
+- IP-CIDR,222.186.61.91/32,⛔️屏蔽广告
+- IP-CIDR,222.186.61.95/32,⛔️屏蔽广告
+- IP-CIDR,222.186.61.96/32,⛔️屏蔽广告
+- IP-CIDR,222.186.61.97/32,⛔️屏蔽广告
+# > ChinaUnicom
+- IP-CIDR,106.75.231.48/32,⛔️屏蔽广告
+- IP-CIDR,119.4.249.166/32,⛔️屏蔽广告
+- IP-CIDR,220.196.52.141/32,⛔️屏蔽广告
+- IP-CIDR,221.6.4.148/32,⛔️屏蔽广告
+# > ChinaMobile
+- IP-CIDR,114.247.28.96/32,⛔️屏蔽广告
+- IP-CIDR,221.179.131.72/32,⛔️屏蔽广告
+- IP-CIDR,221.179.140.145/32,⛔️屏蔽广告
+# > Dr.Peng
+- IP-CIDR,10.72.25.0/24,⛔️屏蔽广告
+- IP-CIDR,115.182.16.79/32,⛔️屏蔽广告
+- IP-CIDR,118.144.88.126/32,⛔️屏蔽广告
+- IP-CIDR,118.144.88.215/32,⛔️屏蔽广告
+- IP-CIDR,118.144.88.216/32,⛔️屏蔽广告
+- IP-CIDR,120.76.189.132/32,⛔️屏蔽广告
+- IP-CIDR,124.14.21.147/32,⛔️屏蔽广告
+- IP-CIDR,124.14.21.151/32,⛔️屏蔽广告
+- IP-CIDR,180.166.52.24/32,⛔️屏蔽广告
+- IP-CIDR,211.161.101.106/32,⛔️屏蔽广告
+- IP-CIDR,220.115.251.25/32,⛔️屏蔽广告
+- IP-CIDR,222.73.156.235/32,⛔️屏蔽广告
 
-
-# USER-AGENT,All4*,🌍国际媒体
-- DOMAIN-SUFFIX,c4assets.com,🌍国际媒体
-- DOMAIN-SUFFIX,channel4.com,🌍国际媒体
-# > AbemaTV
-# USER-AGENT,AbemaTV*,🇯🇵AbemaTV
-- DOMAIN-KEYWORD,abe,🇯🇵AbemaTV
-- DOMAIN-SUFFIX,abema.io,🇯🇵AbemaTV
-- DOMAIN-SUFFIX,abema.tv,🇯🇵AbemaTV
-- DOMAIN-SUFFIX,ameba.jp,🇯🇵AbemaTV
-- DOMAIN-SUFFIX,hayabusa.io,🇯🇵AbemaTV
-- DOMAIN,abematv.akamaized.net,🇯🇵AbemaTV
-- DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵AbemaTV
-- DOMAIN,ds-vod-abematv.akamaized.net,🇯🇵AbemaTV
-- DOMAIN,linear-abematv.akamaized.net,🇯🇵AbemaTV
-- DOMAIN,api.growthpush.com,🇯🇵AbemaTV
-- IP-CIDR,153.122.122.33/32,🇯🇵AbemaTV
-- DOMAIN,api.bucketeer.jp,🇯🇵AbemaTV
-# > Amazon Prime Video
-# USER-AGENT,InstantVideo.US*,📀Amazon
-# USER-AGENT,Prime%20Video*,📀Amazon
-- DOMAIN-SUFFIX,aiv-cdn.net,📀Amazon
-- DOMAIN-SUFFIX,aiv-delivery.net,📀Amazon
-- DOMAIN-SUFFIX,amazonvideo.com,📀Amazon
-- DOMAIN-SUFFIX,primevideo.com,📀Amazon
-- DOMAIN,avodmp4s3ww-a.akamaihd.net,📀Amazon
-- DOMAIN,d25xi40x97liuc.cloudfront.net,📀Amazon
-- DOMAIN,dmqdd6hw24ucf.cloudfront.net,📀Amazon
-- DOMAIN,d22qjgkvxw22r6.cloudfront.net,📀Amazon
-- DOMAIN,d1v5ir2lpwr8os.cloudfront.net,📀Amazon
-- DOMAIN-KEYWORD,avoddashs,📀Amazon
-# > Bahamut
-# USER-AGENT,Anime*,💕动画疯
-- DOMAIN-SUFFIX,bahamut.com.tw,💕动画疯
-- DOMAIN-SUFFIX,gamer.com.tw,💕动画疯
-- DOMAIN,gamer-cds.cdn.hinet.net,💕动画疯
-- DOMAIN,gamer2-cds.cdn.hinet.net,💕动画疯
-- IP-CIDR,104.16.181.30/32,💕动画疯
-- IP-CIDR,104.16.182.30/32,💕动画疯
-# > BBC iPlayer
-# USER-AGENT,BBCiPlayer*,🌍国际媒体
-- DOMAIN-SUFFIX,bbc.co.uk,🌍国际媒体
-- DOMAIN-SUFFIX,bbci.co.uk,🌍国际媒体
-- DOMAIN-KEYWORD,bbcfmt,🌍国际媒体
-- DOMAIN-KEYWORD,uk-live,🌍国际媒体
-- DOMAIN,aod-dash-uk-live.akamaized.net,🌍国际媒体
-- DOMAIN,aod-hls-uk-live.akamaized.net,🌍国际媒体
-- DOMAIN,vod-dash-uk-live.akamaized.net,🌍国际媒体
-- DOMAIN,vod-thumb-uk-live.akamaized.net,🌍国际媒体
-# > DAZN
-- DOMAIN-SUFFIX,dazn.com,🌍国际媒体
-# USER-AGENT,DAZN*,🌍国际媒体
-- DOMAIN-SUFFIX,dazn-api.com,🌍国际媒体
-- DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍国际媒体
-- DOMAIN-KEYWORD,voddazn,🌍国际媒体
-- DOMAIN-SUFFIX,dazndn.com,🌍国际媒体
-- DOMAIN-SUFFIX,indazn.com,🌍国际媒体
-- DOMAIN-SUFFIX,intercom.io,🌍国际媒体
-# > Disney+
-# USER-AGENT,Disney+*,📀Disney+
-- DOMAIN-SUFFIX,bamgrid.com,📀Disney+
-- DOMAIN-SUFFIX,disney-plus.net,📀Disney+
-- DOMAIN-SUFFIX,disneyplus.com,📀Disney+
-- DOMAIN-SUFFIX,dssott.com,📀Disney+
-- DOMAIN,cdn.registerdisney.go.com,📀Disney+
-# > encoreTVB
-# USER-AGENT,encoreTVB*,🌍国际媒体
-- DOMAIN-SUFFIX,encoretvb.com,🌍国际媒体
-- DOMAIN,edge.api.brightcove.com,🌍国际媒体
-- DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍国际媒体
-# >  🌍国际媒体 & Fox Now
-# USER-AGENT,FOX%20NOW*, 🌍国际媒体
-# USER-AGENT,FOXPlus*, 🌍国际媒体
-- DOMAIN-SUFFIX,dashasiafox.akamaized.net, 🌍国际媒体
-- DOMAIN-SUFFIX,fox.com, 🌍国际媒体
-- DOMAIN-SUFFIX,foxdcg.com, 🌍国际媒体
-- DOMAIN-SUFFIX,foxplus.com, 🌍国际媒体
-- DOMAIN-SUFFIX,staticasiafox.akamaized.net, 🌍国际媒体
-- DOMAIN-SUFFIX,theplatform.com, 🌍国际媒体
-- DOMAIN-SUFFIX,uplynk.com, 🌍国际媒体
-# > HBO Now & HBO GO
-# USER-AGENT,HBO%20NOW*,🎞HBO
-# USER-AGENT,HBO%20GO*,🎞HBO
-# USER-AGENT,HBOAsia*,🎞HBO
-- DOMAIN-SUFFIX,hbo.com,🎞HBO
-- DOMAIN-SUFFIX,hbogo.com,🎞HBO
-- DOMAIN-SUFFIX,hboasia.com,🎞HBO
-- DOMAIN-SUFFIX,hbogo.com,🎞HBO
-- DOMAIN-SUFFIX,hbogoasia.hk,🎞HBO
-- DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🎞HBO
-- DOMAIN,bcbolthboa-a.akamaihd.net,🎞HBO
-- DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🎞HBO
-- DOMAIN,manifest.prod.boltdns.net,🎞HBO
-- DOMAIN,s3-ap-southeast-1.amazonaws.com,🎞HBO
-# USER-AGENT,HBO%20GO%20PROD%20HKG*,🎞HBO
-- DOMAIN-SUFFIX,hbogoasia.com,🎞HBO
-- DOMAIN-SUFFIX,hbogoasia.hk,🎞HBO
-- DOMAIN,bcbolthboa-a.akamaihd.net,🎞HBO
-- DOMAIN,players.brightcove.net,🎞HBO
-- DOMAIN,s3-ap-southeast-1.amazonaws.com,🎞HBO
-- DOMAIN,dai3fd1oh325y.cloudfront.net,🎞HBO
-- DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🎞HBO
-- DOMAIN,hboasia1-i.akamaihd.net,🎞HBO
-- DOMAIN,hboasia2-i.akamaihd.net,🎞HBO
-- DOMAIN,hboasia3-i.akamaihd.net,🎞HBO
-- DOMAIN,hboasia4-i.akamaihd.net,🎞HBO
-- DOMAIN,hboasia5-i.akamaihd.net,🎞HBO
-- DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🎞HBO
-# > 华文电视
-# USER-AGENT,HWTVMobile*,🌍国际媒体
-- DOMAIN-SUFFIX,5itv.tv,🌍国际媒体
-- DOMAIN-SUFFIX,ocnttv.com,🌍国际媒体
-# > Japonx
-- DOMAIN-KEYWORD,japonx,🌍国际媒体
-- DOMAIN-KEYWORD,japronx,🌍国际媒体
-- DOMAIN-SUFFIX,japonx.com,🌍国际媒体
-- DOMAIN-SUFFIX,japonx.tv,🌍国际媒体
-- DOMAIN-SUFFIX,japonx.net,🌍国际媒体
-- DOMAIN-SUFFIX,japonx.vip,🌍国际媒体
-- DOMAIN-SUFFIX,japronx.com,🌍国际媒体
-- DOMAIN-SUFFIX,japronx.tv,🌍国际媒体
-- DOMAIN-SUFFIX,japronx.net,🌍国际媒体
-- DOMAIN-SUFFIX,japronx.vip,🌍国际媒体
-# > Hulu
-- DOMAIN-SUFFIX,hulu.com,📀Hulu
-- DOMAIN-SUFFIX,huluim.com,📀Hulu
-- DOMAIN-SUFFIX,hulustream.com,📀Hulu
-- DOMAIN-SUFFIX,hulu.hb.omtrdc.net,📀Hulu
-- DOMAIN-SUFFIX,hulu.sc.omtrdc.net,📀Hulu
-- DOMAIN-SUFFIX,cws-hulu.conviva.com,📀Hulu
-# > Hulu(フールー)
-- DOMAIN-SUFFIX,happyon.jp,📀Hulu
-- DOMAIN-SUFFIX,hulu.jp,📀Hulu
-- DOMAIN-SUFFIX,prod.hjholdings.tv,📀Hulu
-- DOMAIN-SUFFIX,streaks.jp,📀Hulu
-- DOMAIN-SUFFIX,yb.uncn.jp,📀Hulu
-# > ITV
-# USER-AGENT,ITV_Player*,🌍国际媒体
-- DOMAIN-SUFFIX,itv.com,🌍国际媒体
-- DOMAIN-SUFFIX,itvstatic.com,🌍国际媒体
-- DOMAIN,itvpnpmobile-a.akamaihd.net,🌍国际媒体
-# > KKTV
-# USER-AGENT,KKTV*,🌍国际媒体
-# USER-AGENT,com.kktv.ios.kktv*,🌍国际媒体
-- DOMAIN-SUFFIX,kktv.com.tw,🌍国际媒体
-- DOMAIN-SUFFIX,kktv.me,🌍国际媒体
-- DOMAIN,kktv-theater.kk.stream,🌍国际媒体
-# > Line TV
-# USER-AGENT,LINE%20TV*,🌍国际媒体
-- DOMAIN-SUFFIX,linetv.tw,🌍国际媒体
-- DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍国际媒体
-# > LiTV
-- DOMAIN-SUFFIX,litv.tv,🌍国际媒体
-- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍国际媒体
-# > My5
-# USER-AGENT,My5*,GlobalMedia
-- DOMAIN-SUFFIX,channel5.com,🌍国际媒体
-- DOMAIN-SUFFIX,my5.tv,🌍国际媒体
-- DOMAIN,d349g9zuie06uo.cloudfront.net,🌍国际媒体
-# > myTV_SUPER
-# USER-AGENT,mytv*,🌍国际媒体
-- DOMAIN-SUFFIX,mytvsuper.com,🌍国际媒体
-- DOMAIN-SUFFIX,tvb.com,🌍国际媒体
 # > Netflix
 # USER-AGENT,Argo*,🎥netflix
 - DOMAIN,netflix.com.edgesuite.net,🎥netflix
@@ -11564,6 +11335,175 @@ rules:
 - DOMAIN-SUFFIX,netflixdnstest7.com,🎥netflix
 - DOMAIN-SUFFIX,netflixdnstest8.com,🎥netflix
 - DOMAIN-SUFFIX,netflixdnstest9.com,🎥netflix
+
+# > AbemaTV
+# USER-AGENT,AbemaTV*,🇯🇵AbemaTV
+- DOMAIN-KEYWORD,abe,🇯🇵AbemaTV
+- DOMAIN-SUFFIX,abema.io,🇯🇵AbemaTV
+- DOMAIN-SUFFIX,abema.tv,🇯🇵AbemaTV
+- DOMAIN-SUFFIX,ameba.jp,🇯🇵AbemaTV
+- DOMAIN-SUFFIX,hayabusa.io,🇯🇵AbemaTV
+- DOMAIN,abematv.akamaized.net,🇯🇵AbemaTV
+- DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵AbemaTV
+- DOMAIN,ds-vod-abematv.akamaized.net,🇯🇵AbemaTV
+- DOMAIN,linear-abematv.akamaized.net,🇯🇵AbemaTV
+- DOMAIN,api.growthpush.com,🇯🇵AbemaTV
+- IP-CIDR,153.122.122.33/32,🇯🇵AbemaTV
+- DOMAIN,api.bucketeer.jp,🇯🇵AbemaTV
+
+# > Disney+
+# USER-AGENT,Disney+*,📀Disney+
+- DOMAIN-SUFFIX,bamgrid.com,📀Disney+
+- DOMAIN-SUFFIX,disney-plus.net,📀Disney+
+- DOMAIN-SUFFIX,disneyplus.com,📀Disney+
+- DOMAIN-SUFFIX,dssott.com,📀Disney+
+- DOMAIN,cdn.registerdisney.go.com,📀Disney+
+
+# > Amazon Prime Video
+# USER-AGENT,InstantVideo.US*,📀Amazon
+# USER-AGENT,Prime%20Video*,📀Amazon
+- DOMAIN-SUFFIX,aiv-cdn.net,📀Amazon
+- DOMAIN-SUFFIX,aiv-delivery.net,📀Amazon
+- DOMAIN-SUFFIX,amazonvideo.com,📀Amazon
+- DOMAIN-SUFFIX,primevideo.com,📀Amazon
+- DOMAIN,avodmp4s3ww-a.akamaihd.net,📀Amazon
+- DOMAIN,d25xi40x97liuc.cloudfront.net,📀Amazon
+- DOMAIN,dmqdd6hw24ucf.cloudfront.net,📀Amazon
+- DOMAIN,d22qjgkvxw22r6.cloudfront.net,📀Amazon
+- DOMAIN,d1v5ir2lpwr8os.cloudfront.net,📀Amazon
+- DOMAIN-KEYWORD,avoddashs,📀Amazon
+
+# > Bahamut
+# USER-AGENT,Anime*,💕动画疯
+- DOMAIN-SUFFIX,bahamut.com.tw,💕动画疯
+- DOMAIN-SUFFIX,gamer.com.tw,💕动画疯
+- DOMAIN,gamer-cds.cdn.hinet.net,💕动画疯
+- DOMAIN,gamer2-cds.cdn.hinet.net,💕动画疯
+- IP-CIDR,104.16.181.30/32,💕动画疯
+- IP-CIDR,104.16.182.30/32,💕动画疯
+
+# > HBO Now & HBO GO
+# USER-AGENT,HBO%20NOW*,🎞HBO
+# USER-AGENT,HBO%20GO*,🎞HBO
+# USER-AGENT,HBOAsia*,🎞HBO
+- DOMAIN-SUFFIX,hbo.com,🎞HBO
+- DOMAIN-SUFFIX,hbogo.com,🎞HBO
+- DOMAIN-SUFFIX,hboasia.com,🎞HBO
+- DOMAIN-SUFFIX,hbogo.com,🎞HBO
+- DOMAIN-SUFFIX,hbogoasia.hk,🎞HBO
+- DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🎞HBO
+- DOMAIN,bcbolthboa-a.akamaihd.net,🎞HBO
+- DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🎞HBO
+- DOMAIN,manifest.prod.boltdns.net,🎞HBO
+- DOMAIN,s3-ap-southeast-1.amazonaws.com,🎞HBO
+# USER-AGENT,HBO%20GO%20PROD%20HKG*,🎞HBO
+- DOMAIN-SUFFIX,hbogoasia.com,🎞HBO
+- DOMAIN-SUFFIX,hbogoasia.hk,🎞HBO
+- DOMAIN,bcbolthboa-a.akamaihd.net,🎞HBO
+- DOMAIN,players.brightcove.net,🎞HBO
+- DOMAIN,s3-ap-southeast-1.amazonaws.com,🎞HBO
+- DOMAIN,dai3fd1oh325y.cloudfront.net,🎞HBO
+- DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🎞HBO
+- DOMAIN,hboasia1-i.akamaihd.net,🎞HBO
+- DOMAIN,hboasia2-i.akamaihd.net,🎞HBO
+- DOMAIN,hboasia3-i.akamaihd.net,🎞HBO
+- DOMAIN,hboasia4-i.akamaihd.net,🎞HBO
+- DOMAIN,hboasia5-i.akamaihd.net,🎞HBO
+- DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🎞HBO
+
+# > Hulu
+- DOMAIN-SUFFIX,hulu.com,📀Hulu
+- DOMAIN-SUFFIX,huluim.com,📀Hulu
+- DOMAIN-SUFFIX,hulustream.com,📀Hulu
+- DOMAIN-SUFFIX,hulu.hb.omtrdc.net,📀Hulu
+- DOMAIN-SUFFIX,hulu.sc.omtrdc.net,📀Hulu
+- DOMAIN-SUFFIX,cws-hulu.conviva.com,📀Hulu
+# > Hulu(フールー)
+- DOMAIN-SUFFIX,happyon.jp,📀Hulu
+- DOMAIN-SUFFIX,hulu.jp,📀Hulu
+- DOMAIN-SUFFIX,prod.hjholdings.tv,📀Hulu
+- DOMAIN-SUFFIX,streaks.jp,📀Hulu
+- DOMAIN-SUFFIX,yb.uncn.jp,📀Hulu
+
+# USER-AGENT,All4*,🌍国际媒体
+- DOMAIN-SUFFIX,c4assets.com,🌍国际媒体
+- DOMAIN-SUFFIX,channel4.com,🌍国际媒体
+# > BBC iPlayer
+# USER-AGENT,BBCiPlayer*,🌍国际媒体
+- DOMAIN-SUFFIX,bbc.co.uk,🌍国际媒体
+- DOMAIN-SUFFIX,bbci.co.uk,🌍国际媒体
+- DOMAIN-KEYWORD,bbcfmt,🌍国际媒体
+- DOMAIN-KEYWORD,uk-live,🌍国际媒体
+- DOMAIN,aod-dash-uk-live.akamaized.net,🌍国际媒体
+- DOMAIN,aod-hls-uk-live.akamaized.net,🌍国际媒体
+- DOMAIN,vod-dash-uk-live.akamaized.net,🌍国际媒体
+- DOMAIN,vod-thumb-uk-live.akamaized.net,🌍国际媒体
+# > DAZN
+- DOMAIN-SUFFIX,dazn.com,🌍国际媒体
+# USER-AGENT,DAZN*,🌍国际媒体
+- DOMAIN-SUFFIX,dazn-api.com,🌍国际媒体
+- DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍国际媒体
+- DOMAIN-KEYWORD,voddazn,🌍国际媒体
+- DOMAIN-SUFFIX,dazndn.com,🌍国际媒体
+- DOMAIN-SUFFIX,indazn.com,🌍国际媒体
+- DOMAIN-SUFFIX,intercom.io,🌍国际媒体
+# > encoreTVB
+# USER-AGENT,encoreTVB*,🌍国际媒体
+- DOMAIN-SUFFIX,encoretvb.com,🌍国际媒体
+- DOMAIN,edge.api.brightcove.com,🌍国际媒体
+- DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍国际媒体
+# >  🌍国际媒体 & Fox Now
+# USER-AGENT,FOX%20NOW*, 🌍国际媒体
+# USER-AGENT,FOXPlus*, 🌍国际媒体
+- DOMAIN-SUFFIX,dashasiafox.akamaized.net, 🌍国际媒体
+- DOMAIN-SUFFIX,fox.com, 🌍国际媒体
+- DOMAIN-SUFFIX,foxdcg.com, 🌍国际媒体
+- DOMAIN-SUFFIX,foxplus.com, 🌍国际媒体
+- DOMAIN-SUFFIX,staticasiafox.akamaized.net, 🌍国际媒体
+- DOMAIN-SUFFIX,theplatform.com, 🌍国际媒体
+- DOMAIN-SUFFIX,uplynk.com, 🌍国际媒体
+# > 华文电视
+# USER-AGENT,HWTVMobile*,🌍国际媒体
+- DOMAIN-SUFFIX,5itv.tv,🌍国际媒体
+- DOMAIN-SUFFIX,ocnttv.com,🌍国际媒体
+# > Japonx
+- DOMAIN-KEYWORD,japonx,🌍国际媒体
+- DOMAIN-KEYWORD,japronx,🌍国际媒体
+- DOMAIN-SUFFIX,japonx.com,🌍国际媒体
+- DOMAIN-SUFFIX,japonx.tv,🌍国际媒体
+- DOMAIN-SUFFIX,japonx.net,🌍国际媒体
+- DOMAIN-SUFFIX,japonx.vip,🌍国际媒体
+- DOMAIN-SUFFIX,japronx.com,🌍国际媒体
+- DOMAIN-SUFFIX,japronx.tv,🌍国际媒体
+- DOMAIN-SUFFIX,japronx.net,🌍国际媒体
+- DOMAIN-SUFFIX,japronx.vip,🌍国际媒体
+# > ITV
+# USER-AGENT,ITV_Player*,🌍国际媒体
+- DOMAIN-SUFFIX,itv.com,🌍国际媒体
+- DOMAIN-SUFFIX,itvstatic.com,🌍国际媒体
+- DOMAIN,itvpnpmobile-a.akamaihd.net,🌍国际媒体
+# > KKTV
+# USER-AGENT,KKTV*,🌍国际媒体
+# USER-AGENT,com.kktv.ios.kktv*,🌍国际媒体
+- DOMAIN-SUFFIX,kktv.com.tw,🌍国际媒体
+- DOMAIN-SUFFIX,kktv.me,🌍国际媒体
+- DOMAIN,kktv-theater.kk.stream,🌍国际媒体
+# > Line TV
+# USER-AGENT,LINE%20TV*,🌍国际媒体
+- DOMAIN-SUFFIX,linetv.tw,🌍国际媒体
+- DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍国际媒体
+# > LiTV
+- DOMAIN-SUFFIX,litv.tv,🌍国际媒体
+- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍国际媒体
+# > My5
+# USER-AGENT,My5*,GlobalMedia
+- DOMAIN-SUFFIX,channel5.com,🌍国际媒体
+- DOMAIN-SUFFIX,my5.tv,🌍国际媒体
+- DOMAIN,d349g9zuie06uo.cloudfront.net,🌍国际媒体
+# > myTV_SUPER
+# USER-AGENT,mytv*,🌍国际媒体
+- DOMAIN-SUFFIX,mytvsuper.com,🌍国际媒体
+- DOMAIN-SUFFIX,tvb.com,🌍国际媒体
 # > niconico
 - DOMAIN-SUFFIX,dmc.nico,🌍国际媒体
 - DOMAIN-SUFFIX,nicovideo.jp,🌍国际媒体
@@ -11598,12 +11538,6 @@ rules:
 - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍国际媒体
 - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍国际媒体
 - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍国际媒体
-# > Youtube
-# USER-AGENT,com.google.ios.youtube*,🌌google
-# USER-AGENT,YouTube*,🌌google
-- DOMAIN-SUFFIX,googlevideo.com,🌌google
-- DOMAIN-SUFFIX,youtube.com,🌌google
-- DOMAIN,youtubei.googleapis.com,🌌google
 
 # (Music)
 # > Deezer
@@ -11638,11 +11572,56 @@ rules:
 # > TIDAL
 # USER-AGENT,TIDAL*,🎵music
 - DOMAIN-SUFFIX,tidal.com,🎵music
+
 # > YoutubeMusic
 # USER-AGENT,com.google.ios.youtubemusic*,🌌google
 # USER-AGENT,YouTubeMusic*,🌌google
-
-
+# > Google
+- DOMAIN-SUFFIX,abc.xyz,🌌google
+- DOMAIN-SUFFIX,android.com,🌌google
+- DOMAIN-SUFFIX,androidify.com,🌌google
+- DOMAIN-SUFFIX,dialogflow.com,🌌google
+- DOMAIN-SUFFIX,autodraw.com,🌌google
+- DOMAIN-SUFFIX,capitalg.com,🌌google
+- DOMAIN-SUFFIX,certificate-transparency.org,🌌google
+- DOMAIN-SUFFIX,chrome.com,🌌google
+- DOMAIN-SUFFIX,chromeexperiments.com,🌌google
+- DOMAIN-SUFFIX,chromestatus.com,🌌google
+- DOMAIN-SUFFIX,chromium.org,🌌google
+- DOMAIN-SUFFIX,creativelab5.com,🌌google
+- DOMAIN-SUFFIX,debug.com,🌌google
+- DOMAIN-SUFFIX,deepmind.com,🌌google
+- DOMAIN-SUFFIX,firebaseio.com,🌌google
+- DOMAIN-SUFFIX,getmdl.io,🌌google
+- DOMAIN-SUFFIX,ggpht.com,🌌google
+- DOMAIN-SUFFIX,gmail.com,🌌google
+- DOMAIN-SUFFIX,gmodules.com,🌌google
+- DOMAIN-SUFFIX,godoc.org,🌌google
+- DOMAIN-SUFFIX,golang.org,🌌google
+- DOMAIN-SUFFIX,gstatic.com,🌌google
+- DOMAIN-SUFFIX,gv.com,🌌google
+- DOMAIN-SUFFIX,gwtproject.org,🌌google
+- DOMAIN-SUFFIX,itasoftware.com,🌌google
+- DOMAIN-SUFFIX,madewithcode.com,🌌google
+- DOMAIN-SUFFIX,material.io,🌌google
+- DOMAIN-SUFFIX,polymer-project.org,🌌google
+- DOMAIN-SUFFIX,admin.recaptcha.net,🌌google
+- DOMAIN-SUFFIX,recaptcha.net,🌌google
+- DOMAIN-SUFFIX,shattered.io,🌌google
+- DOMAIN-SUFFIX,synergyse.com,🌌google
+- DOMAIN-SUFFIX,tensorflow.org,🌌google
+- DOMAIN-SUFFIX,tfhub.dev,🌌google
+- DOMAIN-SUFFIX,tiltbrush.com,🌌google
+- DOMAIN-SUFFIX,waveprotocol.org,🌌google
+- DOMAIN-SUFFIX,waymo.com,🌌google
+- DOMAIN-SUFFIX,webmproject.org,🌌google
+- DOMAIN-SUFFIX,webrtc.org,🌌google
+- DOMAIN-SUFFIX,whatbrowser.org,🌌google
+- DOMAIN-SUFFIX,widevine.com,🌌google
+- DOMAIN-SUFFIX,x.company,🌌google
+- DOMAIN-SUFFIX,youtu.be,🌌google
+- DOMAIN-SUFFIX,yt.be,🌌google
+- DOMAIN-SUFFIX,ytimg.com,🌌google
 # (DNS Cache Pollution Protection)
 # > Google
 # > Google
@@ -11658,6 +11637,12 @@ rules:
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌌google
 - DOMAIN-KEYWORD,google,🌌google
 - DOMAIN-KEYWORD,blogspot,🌌google
+# > Youtube
+# USER-AGENT,com.google.ios.youtube*,🌌google
+# USER-AGENT,YouTube*,🌌google
+- DOMAIN-SUFFIX,googlevideo.com,🌌google
+- DOMAIN-SUFFIX,youtube.com,🌌google
+- DOMAIN,youtubei.googleapis.com,🌌google
 # (Extra IP-CIRD)
 # > Google
 - IP-CIDR,35.190.247.0/24,🌌google
@@ -11672,6 +11657,45 @@ rules:
 - IP-CIDR,209.85.128.0/17,🌌google
 - IP-CIDR,216.58.192.0/19,🌌google
 - IP-CIDR,216.239.32.0/19,🌌google
+
+# > Telegram
+- DOMAIN-SUFFIX,t.me,📲Telegram
+- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
+- DOMAIN-SUFFIX,telegra.ph,📲Telegram
+- DOMAIN-SUFFIX,telegram.me,📲Telegram
+- DOMAIN-SUFFIX,telegram.org,📲Telegram
+- IP-CIDR,67.198.55.0/24,📲Telegram
+- IP-CIDR,91.108.4.0/22,📲Telegram
+- IP-CIDR,91.108.8.0/22,📲Telegram
+- IP-CIDR,91.108.12.0/22,📲Telegram
+- IP-CIDR,91.108.16.0/22,📲Telegram
+- IP-CIDR,91.108.56.0/22,📲Telegram
+- IP-CIDR,109.239.140.0/24,📲Telegram
+- IP-CIDR,149.154.160.0/20,📲Telegram
+- IP-CIDR,205.172.60.0/22,📲Telegram
+- DOMAIN-SUFFIX,t.me,📲Telegram
+- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
+- DOMAIN-SUFFIX,telegra.ph,📲Telegram
+- DOMAIN-SUFFIX,telegram.me,📲Telegram
+- DOMAIN-SUFFIX,telegram.org,📲Telegram
+- DOMAIN-SUFFIX,t.me,📲Telegram
+- IP-CIDR,67.198.55.0/24,📲Telegram
+- IP-CIDR,91.108.4.0/22,📲Telegram
+- IP-CIDR,91.108.8.0/22,📲Telegram
+- IP-CIDR,91.108.12.0/22,📲Telegram
+- IP-CIDR,91.108.16.0/22,📲Telegram
+- IP-CIDR,91.108.56.150/32,📲Telegram
+- IP-CIDR,91.108.56.141/32,📲Telegram
+- IP-CIDR,109.239.140.0/24,📲Telegram
+- IP-CIDR,149.154.160.0/20,📲Telegram
+- IP-CIDR,149.154.164.250/32,📲Telegram
+- IP-CIDR,149.154.175.51/32,📲Telegram
+- IP-CIDR,149.154.175.53/32,📲Telegram
+- IP-CIDR,149.154.167.50/32,📲Telegram
+- IP-CIDR,149.154.167.51/32,📲Telegram
+- IP-CIDR,172.217.160.74/32,📲Telegram
+- IP-CIDR,205.172.60.0/22,📲Telegram
+
 # > Microsoft
 - DOMAIN-SUFFIX,onedrive.live.com,🔰Proxy
 - DOMAIN-SUFFIX,xboxlive.com,🔰Proxy
@@ -11710,43 +11734,6 @@ rules:
 - DOMAIN-SUFFIX,twitpic.com,🔰Proxy
 - DOMAIN-SUFFIX,vine.co,🔰Proxy
 - DOMAIN-KEYWORD,twitter,🔰Proxy
-# > Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
-- DOMAIN-SUFFIX,telegra.ph,📲Telegram
-- DOMAIN-SUFFIX,telegram.me,📲Telegram
-- DOMAIN-SUFFIX,telegram.org,📲Telegram
-- IP-CIDR,67.198.55.0/24,📲Telegram
-- IP-CIDR,91.108.4.0/22,📲Telegram
-- IP-CIDR,91.108.8.0/22,📲Telegram
-- IP-CIDR,91.108.12.0/22,📲Telegram
-- IP-CIDR,91.108.16.0/22,📲Telegram
-- IP-CIDR,91.108.56.0/22,📲Telegram
-- IP-CIDR,109.239.140.0/24,📲Telegram
-- IP-CIDR,149.154.160.0/20,📲Telegram
-- IP-CIDR,205.172.60.0/22,📲Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
-- DOMAIN-SUFFIX,telegra.ph,📲Telegram
-- DOMAIN-SUFFIX,telegram.me,📲Telegram
-- DOMAIN-SUFFIX,telegram.org,📲Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- IP-CIDR,67.198.55.0/24,📲Telegram
-- IP-CIDR,91.108.4.0/22,📲Telegram
-- IP-CIDR,91.108.8.0/22,📲Telegram
-- IP-CIDR,91.108.12.0/22,📲Telegram
-- IP-CIDR,91.108.16.0/22,📲Telegram
-- IP-CIDR,91.108.56.150/32,📲Telegram
-- IP-CIDR,91.108.56.141/32,📲Telegram
-- IP-CIDR,109.239.140.0/24,📲Telegram
-- IP-CIDR,149.154.160.0/20,📲Telegram
-- IP-CIDR,149.154.164.250/32,📲Telegram
-- IP-CIDR,149.154.175.51/32,📲Telegram
-- IP-CIDR,149.154.175.53/32,📲Telegram
-- IP-CIDR,149.154.167.50/32,📲Telegram
-- IP-CIDR,149.154.167.51/32,📲Telegram
-- IP-CIDR,172.217.160.74/32,📲Telegram
-- IP-CIDR,205.172.60.0/22,📲Telegram
 # > Line
 - DOMAIN-SUFFIX,line.me,🔰Proxy
 - DOMAIN-SUFFIX,line-apps.com,🔰Proxy
@@ -12122,79 +12109,32 @@ rules:
 - DOMAIN-SUFFIX,xfinity.com,🔰Proxy
 - DOMAIN-SUFFIX,zattoo.com,🔰Proxy
 # USER-AGENT,Roam*,🔰Proxy
-
 # (The Most Popular Sites)
 # > Apple
 # >> TestFlight
-- DOMAIN,testflight.apple.com,📦Final
+- DOMAIN,testflight.apple.com,🔰Proxy
 # >> Apple URL Shortener
-- DOMAIN-SUFFIX,appsto.re,📦Final
+- DOMAIN-SUFFIX,appsto.re,🔰Proxy
 # >> iBooks Store download
-- DOMAIN,books.itunes.apple.com,📦Final
+- DOMAIN,books.itunes.apple.com,🔰Proxy
 # >> iTunes Store Moveis Trailers
-- DOMAIN,hls.itunes.apple.com,📦Final
+- DOMAIN,hls.itunes.apple.com,🔰Proxy
 # >> App Store Preview
-- DOMAIN,apps.apple.com,📦Final
-- DOMAIN,itunes.apple.com,📦Final
+- DOMAIN,apps.apple.com,🔰Proxy
+- DOMAIN,itunes.apple.com,🔰Proxy
 # >> Spotlight
-- DOMAIN,api-glb-sea.smoot.apple.com,📦Final
+- DOMAIN,api-glb-sea.smoot.apple.com,🔰Proxy
 # >> Dictionary
-- DOMAIN,lookup-api.apple.com,📦Final
+- DOMAIN,lookup-api.apple.com,🔰Proxy
 # >> Apple News and Apple Map TOMTOM Version
-- DOMAIN,gspe1-ssl.ls.apple.com,📦Final
-# USER-AGENT,AppleNews*,📦Final
-# USER-AGENT,com.apple.news*,📦Final
-- DOMAIN-SUFFIX,apple.news,📦Final
-- DOMAIN,news-client.apple.com,📦Final
-- DOMAIN,news-edge.apple.com,📦Final
-- DOMAIN,news-events.apple.com,📦Final
-- DOMAIN,apple.comscoreresearch.com,📦Final
-# > Google
-- DOMAIN-SUFFIX,abc.xyz,🌌google
-- DOMAIN-SUFFIX,android.com,🌌google
-- DOMAIN-SUFFIX,androidify.com,🌌google
-- DOMAIN-SUFFIX,dialogflow.com,🌌google
-- DOMAIN-SUFFIX,autodraw.com,🌌google
-- DOMAIN-SUFFIX,capitalg.com,🌌google
-- DOMAIN-SUFFIX,certificate-transparency.org,🌌google
-- DOMAIN-SUFFIX,chrome.com,🌌google
-- DOMAIN-SUFFIX,chromeexperiments.com,🌌google
-- DOMAIN-SUFFIX,chromestatus.com,🌌google
-- DOMAIN-SUFFIX,chromium.org,🌌google
-- DOMAIN-SUFFIX,creativelab5.com,🌌google
-- DOMAIN-SUFFIX,debug.com,🌌google
-- DOMAIN-SUFFIX,deepmind.com,🌌google
-- DOMAIN-SUFFIX,firebaseio.com,🌌google
-- DOMAIN-SUFFIX,getmdl.io,🌌google
-- DOMAIN-SUFFIX,ggpht.com,🌌google
-- DOMAIN-SUFFIX,gmail.com,🌌google
-- DOMAIN-SUFFIX,gmodules.com,🌌google
-- DOMAIN-SUFFIX,godoc.org,🌌google
-- DOMAIN-SUFFIX,golang.org,🌌google
-- DOMAIN-SUFFIX,gstatic.com,🌌google
-- DOMAIN-SUFFIX,gv.com,🌌google
-- DOMAIN-SUFFIX,gwtproject.org,🌌google
-- DOMAIN-SUFFIX,itasoftware.com,🌌google
-- DOMAIN-SUFFIX,madewithcode.com,🌌google
-- DOMAIN-SUFFIX,material.io,🌌google
-- DOMAIN-SUFFIX,polymer-project.org,🌌google
-- DOMAIN-SUFFIX,admin.recaptcha.net,🌌google
-- DOMAIN-SUFFIX,recaptcha.net,🌌google
-- DOMAIN-SUFFIX,shattered.io,🌌google
-- DOMAIN-SUFFIX,synergyse.com,🌌google
-- DOMAIN-SUFFIX,tensorflow.org,🌌google
-- DOMAIN-SUFFIX,tfhub.dev,🌌google
-- DOMAIN-SUFFIX,tiltbrush.com,🌌google
-- DOMAIN-SUFFIX,waveprotocol.org,🌌google
-- DOMAIN-SUFFIX,waymo.com,🌌google
-- DOMAIN-SUFFIX,webmproject.org,🌌google
-- DOMAIN-SUFFIX,webrtc.org,🌌google
-- DOMAIN-SUFFIX,whatbrowser.org,🌌google
-- DOMAIN-SUFFIX,widevine.com,🌌google
-- DOMAIN-SUFFIX,x.company,🌌google
-- DOMAIN-SUFFIX,youtu.be,🌌google
-- DOMAIN-SUFFIX,yt.be,🌌google
-- DOMAIN-SUFFIX,ytimg.com,🌌google
+- DOMAIN,gspe1-ssl.ls.apple.com,🔰Proxy
+# USER-AGENT,AppleNews*,🔰Proxy
+# USER-AGENT,com.apple.news*,🔰Proxy
+- DOMAIN-SUFFIX,apple.news,🔰Proxy
+- DOMAIN,news-client.apple.com,🔰Proxy
+- DOMAIN,news-edge.apple.com,🔰Proxy
+- DOMAIN,news-events.apple.com,🔰Proxy
+- DOMAIN,apple.comscoreresearch.com,🔰Proxy
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,🔰Proxy
 - DOMAIN-SUFFIX,1drv.ms,🔰Proxy
@@ -12294,7 +12234,6 @@ rules:
 - DOMAIN-SUFFIX,wolframalpha.com,🔰Proxy
 - DOMAIN-SUFFIX,x-art.com,🔰Proxy
 - DOMAIN-SUFFIX,yimg.com,🔰Proxy
-
 - DOMAIN-SUFFIX,9to5mac.com,🔰Proxy
 - DOMAIN-SUFFIX,abpchina.org,🔰Proxy
 - DOMAIN-SUFFIX,adblockplus.org,🔰Proxy
@@ -12596,13 +12535,96 @@ rules:
 - DOMAIN-SUFFIX,ying.com,🔰Proxy
 - DOMAIN-SUFFIX,yoyo.org,🔰Proxy
 - DOMAIN-SUFFIX,ytimg.com,🔰Proxy
+# > Speed Test
+- DOMAIN-SUFFIX,speedtest.net,🔰Proxy
+- DOMAIN-SUFFIX,netspeedtestmaster.com,🔰Proxy
+- DOMAIN,speedtest.macpaw.com,🔰Proxy
+# > Apple
+- DOMAIN-SUFFIX,aaplimg.com,🔰Proxy
+- DOMAIN-SUFFIX,apple.co,🔰Proxy
+- DOMAIN-SUFFIX,apple.com,🔰Proxy
+- DOMAIN-SUFFIX,appstore.com,🔰Proxy
+- DOMAIN-SUFFIX,cdn-apple.com,🔰Proxy
+- DOMAIN-SUFFIX,crashlytics.com,🔰Proxy
+- DOMAIN-SUFFIX,icloud.com,🔰Proxy
+- DOMAIN-SUFFIX,icloud-content.com,🔰Proxy
+- DOMAIN-SUFFIX,me.com,🔰Proxy
+- DOMAIN-SUFFIX,mzstatic.com,🔰Proxy
+- DOMAIN,www-cdn.icloud.com.akadns.net,🔰Proxy
+- DOMAIN-SUFFIX,kaspersky-labs.com,🔰Proxy
+- IP-CIDR,17.0.0.0/8,🔰Proxy
+
+# NeteaseMusic
+#- DOMAIN,api.iplay.163.com,🎵netease
+#- DOMAIN,apm3.music.163.com,🎵netease
+#- DOMAIN,apm.music.163.com,🎵netease
+#- DOMAIN,interface3.music.163.com,🎵netease
+#- DOMAIN,interface.music.163.com,🎵netease
+#- DOMAIN,music.163.com,🎵netease
+#- IP-CIDR,39.105.63.80/32,🎵netease
+#- IP-CIDR,45.254.48.1/32,🎵netease
+#- IP-CIDR,47.100.127.239/32,🎵netease
+#- IP-CIDR,59.111.160.195/32,🎵netease
+#- IP-CIDR,59.111.160.197/32,🎵netease
+#- IP-CIDR,59.111.181.35/32,🎵netease
+#- IP-CIDR,59.111.181.38/32,🎵netease
+#- IP-CIDR,59.111.181.60/32,🎵netease
+#- IP-CIDR,101.71.154.241/32,🎵netease
+#- IP-CIDR,103.126.92.132/32,🎵netease
+#- IP-CIDR,103.126.92.133/32,🎵netease
+#- IP-CIDR,112.13.119.17/32,🎵netease
+#- IP-CIDR,112.13.122.1/32,🎵netease
+#- IP-CIDR,115.236.118.33/32,🎵netease
+#- IP-CIDR,115.236.121.1/32,🎵netease
+#- IP-CIDR,118.24.63.156/32,🎵netease
+#- IP-CIDR,193.112.159.225/32,🎵netease
+#- IP-CIDR,223.252.199.66/32,🎵netease
+#- IP-CIDR,223.252.199.67/32,🎵netease
+#- IP-CIDR,223.252.199.67/32,🎵netease
+- DOMAIN,api.iplay.163.com,DIRECT
+- DOMAIN,apm3.music.163.com,DIRECT
+- DOMAIN,apm.music.163.com,DIRECT
+- DOMAIN,interface3.music.163.com,DIRECT
+- DOMAIN,interface.music.163.com,DIRECT
+- DOMAIN,music.163.com,DIRECT
+# (国内媒体)
+# > 愛奇藝台灣站
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,71.am,DIRECT
+- DOMAIN-KEYWORD,qiyi,DIRECT
+- DOMAIN-SUFFIX,qy.net,DIRECT
+- IP-CIDR,101.227.0.0/16,DIRECT
+- IP-CIDR,101.224.0.0/13,DIRECT
+- IP-CIDR,119.176.0.0/12,DIRECT
+# > bilibili
+- IP-CIDR,150.116.92.250/32,🇨🇳国内媒体
+- IP-CIDR,164.52.110.14/32,🇨🇳国内媒体
+- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
+- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
+- IP-CIDR,128.1.62.200/32,🇨🇳国内媒体
+- IP-CIDR,128.1.62.199/32,🇨🇳国内媒体
+- IP-CIDR,128.1.62.201/32,🇨🇳国内媒体
+- DOMAIN-SUFFIX,hdslb.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,acgvideo.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,bilivideo.com,🇨🇳国内媒体
+- DOMAIN,upos-hz-mirrorakam.akamaized.net,🇨🇳国内媒体
+- DOMAIN-SUFFIX,bilibili.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,bangumi.bilibili.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,api.bilibili.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,acg.tv,🇨🇳国内媒体
+- DOMAIN-SUFFIX,b23.tv,🇨🇳国内媒体
+- DOMAIN-SUFFIX,biliapi.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,biliapi.net,🇨🇳国内媒体
+- DOMAIN-SUFFIX,bilibili.tv,🇨🇳国内媒体
+- DOMAIN-SUFFIX,biligame.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,biligame.net,🇨🇳国内媒体
+- DOMAIN-SUFFIX,im9.com,🇨🇳国内媒体
+- DOMAIN-SUFFIX,apm-misaka.biliapi.net,🇨🇳国内媒体
 
 # China Area Network
-
 # > 360
 - DOMAIN-SUFFIX,qhres.com,DIRECT
 - DOMAIN-SUFFIX,qhimg.com,DIRECT
-
 # > Alibaba
 # USER-AGENT,%E4%BC%98%E9%85%B7*,DIRECT
 - DOMAIN-SUFFIX,alibaba.com,DIRECT
@@ -12622,7 +12644,6 @@ rules:
 - DOMAIN-SUFFIX,youku.com,DIRECT
 - DOMAIN-SUFFIX,xiami.com,DIRECT
 - DOMAIN-SUFFIX,xiami.net,DIRECT
-
 # > Baidu
 - DOMAIN-SUFFIX,baidu.com,DIRECT
 - DOMAIN-SUFFIX,baidubcr.com,DIRECT
@@ -12694,7 +12715,6 @@ rules:
 - DOMAIN-SUFFIX,windows.com,DIRECT
 - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
 #- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
-
 # > Sina
 - DOMAIN-SUFFIX,sina.com,DIRECT
 - DOMAIN-SUFFIX,weibo.com,DIRECT
@@ -12759,10 +12779,6 @@ rules:
 - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 - DOMAIN-SUFFIX,whatismyip.com,DIRECT
 - DOMAIN,ip.istatmenus.app,DIRECT
-# > Speed Test
-- DOMAIN-SUFFIX,speedtest.net,🔰Proxy
-- DOMAIN-SUFFIX,netspeedtestmaster.com,🔰Proxy
-- DOMAIN,speedtest.macpaw.com,🔰Proxy
 # > Private Tracker
 - DOMAIN-SUFFIX,animebytes.tv,DIRECT
 - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
@@ -13213,7 +13229,6 @@ rules:
 - DOMAIN,download.jetbrains.com,DIRECT
 - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
 - IP-CIDR,1.255.62.0/24,DIRECT
-
 # > CN
 - DOMAIN-SUFFIX,tx-xuetangx.pull.yximgs.com,DIRECT
 - DOMAIN-SUFFIX,cn,DIRECT
@@ -13330,28 +13345,12 @@ rules:
 - DOMAIN,download.jetbrains.com,DIRECT
 - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
 
-# > Apple
-- DOMAIN-SUFFIX,aaplimg.com,📦Final
-- DOMAIN-SUFFIX,apple.co,📦Final
-- DOMAIN-SUFFIX,apple.com,📦Final
-- DOMAIN-SUFFIX,appstore.com,📦Final
-- DOMAIN-SUFFIX,cdn-apple.com,📦Final
-- DOMAIN-SUFFIX,crashlytics.com,📦Final
-- DOMAIN-SUFFIX,icloud.com,📦Final
-- DOMAIN-SUFFIX,icloud-content.com,📦Final
-- DOMAIN-SUFFIX,me.com,📦Final
-- DOMAIN-SUFFIX,mzstatic.com,📦Final
-- DOMAIN,www-cdn.icloud.com.akadns.net,📦Final
-- DOMAIN-SUFFIX,kaspersky-labs.com,📦Final
-- IP-CIDR,17.0.0.0/8,📦Final
-
 # Local Area Network
 - IP-CIDR,192.168.0.0/16,DIRECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
-
 - DOMAIN-SUFFIX,local,DIRECT
 - IP-CIDR,127.0.0.0/8,DIRECT
 - IP-CIDR,172.16.0.0/12,DIRECT
@@ -13359,51 +13358,7 @@ rules:
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,17.0.0.0/8,DIRECT
 - IP-CIDR,100.64.0.0/10,DIRECT
-
-# Internet Service Provider ⛔️屏蔽广告 运营商劫持
-- IP-CIDR,39.107.15.115/32,⛔️屏蔽广告
-- IP-CIDR,47.89.59.182/32,⛔️屏蔽广告
-- IP-CIDR,103.49.209.27/32,⛔️屏蔽广告
-- IP-CIDR,123.56.152.96/32,⛔️屏蔽广告
-# > ChinaNet
-- IP-CIDR,61.160.200.223/32,⛔️屏蔽广告
-- IP-CIDR,61.160.200.242/32,⛔️屏蔽广告
-- IP-CIDR,61.160.200.252/32,⛔️屏蔽广告
-- IP-CIDR,61.174.50.214/32,⛔️屏蔽广告
-- IP-CIDR,111.175.220.163/32,⛔️屏蔽广告
-- IP-CIDR,111.175.220.164/32,⛔️屏蔽广告
-- IP-CIDR,124.232.160.178/32,⛔️屏蔽广告
-- IP-CIDR,175.6.223.15/32,⛔️屏蔽广告
-- IP-CIDR,183.59.53.237/32,⛔️屏蔽广告
-- IP-CIDR,218.93.127.37/32,⛔️屏蔽广告
-- IP-CIDR,221.228.17.152/32,⛔️屏蔽广告
-- IP-CIDR,221.231.6.79/32,⛔️屏蔽广告
-- IP-CIDR,222.186.61.91/32,⛔️屏蔽广告
-- IP-CIDR,222.186.61.95/32,⛔️屏蔽广告
-- IP-CIDR,222.186.61.96/32,⛔️屏蔽广告
-- IP-CIDR,222.186.61.97/32,⛔️屏蔽广告
-# > ChinaUnicom
-- IP-CIDR,106.75.231.48/32,⛔️屏蔽广告
-- IP-CIDR,119.4.249.166/32,⛔️屏蔽广告
-- IP-CIDR,220.196.52.141/32,⛔️屏蔽广告
-- IP-CIDR,221.6.4.148/32,⛔️屏蔽广告
-# > ChinaMobile
-- IP-CIDR,114.247.28.96/32,⛔️屏蔽广告
-- IP-CIDR,221.179.131.72/32,⛔️屏蔽广告
-- IP-CIDR,221.179.140.145/32,⛔️屏蔽广告
-# > Dr.Peng
-- IP-CIDR,10.72.25.0/24,⛔️屏蔽广告
-- IP-CIDR,115.182.16.79/32,⛔️屏蔽广告
-- IP-CIDR,118.144.88.126/32,⛔️屏蔽广告
-- IP-CIDR,118.144.88.215/32,⛔️屏蔽广告
-- IP-CIDR,118.144.88.216/32,⛔️屏蔽广告
-- IP-CIDR,120.76.189.132/32,⛔️屏蔽广告
-- IP-CIDR,124.14.21.147/32,⛔️屏蔽广告
-- IP-CIDR,124.14.21.151/32,⛔️屏蔽广告
-- IP-CIDR,180.166.52.24/32,⛔️屏蔽广告
-- IP-CIDR,211.161.101.106/32,⛔️屏蔽广告
-- IP-CIDR,220.115.251.25/32,⛔️屏蔽广告
-- IP-CIDR,222.73.156.235/32,⛔️屏蔽广告
+# torrent
 - DOMAIN-SUFFIX,qbittorrent.org,DIRECT
 - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
 - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
