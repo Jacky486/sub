@@ -32,7 +32,7 @@ dns:
   #enhanced-mode: fake-ip
   nameserver:
      - https://162.159.36.1/dns-query
-     - https://193.17.47.1/dns-query
+     - https://odvr.nic.cz/dns-query
 #  fake-ip-filter:
 #     - 'stun.*.*'
 #     - 'stun.*.*.*'
