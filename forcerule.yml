@@ -1,4 +1,4 @@
-#代理端口
+﻿#代理端口
 mixed-port: 7890
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
@@ -31,8 +31,9 @@ dns:
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
   nameserver:
-     - https://162.159.36.1/dns-query
-     - https://doh.libredns.gr/dns-query
+    - 8.8.4.4
+  fallback:
+    - https://162.159.36.1/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
