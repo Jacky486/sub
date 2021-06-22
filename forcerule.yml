@@ -30,6 +30,10 @@ dns:
   ipv6: false
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
+  default-nameserver:
+    - 8.8.4.4
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
   nameserver:
      - 8.8.4.4
   fallback:
@@ -38,6 +42,9 @@ dns:
      - 'stun.*.*'
      - 'stun.*.*.*'
      - 'stun.*.*.*.*'
+  fallback-filter:
+    geoip: true
+    ipcidr:
 
 rules:
 - PROCESS-NAME,qbittorrent.exe,DIRECT
