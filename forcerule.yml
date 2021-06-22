@@ -37,7 +37,7 @@ dns:
   nameserver:
      - 8.8.4.4
   fallback:
-     - https://1.1.1.1/dns-query
+     - 1.1.1.1
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
