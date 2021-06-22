@@ -31,13 +31,14 @@ dns:
   listen: 127.0.0.1:5450
   enhanced-mode: fake-ip
   default-nameserver:
-    - 8.8.4.4
+     - 8.8.8.8
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
   nameserver:
-     - 8.8.4.4
-  fallback:
+     - 8.8.8.8
      - 1.1.1.1
+  fallback:
+     - https://1.1.1.1/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
