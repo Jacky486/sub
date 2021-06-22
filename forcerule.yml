@@ -33,11 +33,11 @@ dns:
   default-nameserver:
      - 8.8.8.8
   fake-ip-range: 198.18.0.1/16
-  use-hosts: false
+  use-hosts: true
   nameserver:
      - 8.8.8.8
   fallback:
-     - https://8.8.8.8/dns-query
+     - tls://8.8.8.8:853
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
