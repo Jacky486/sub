@@ -37,7 +37,7 @@ dns:
   nameserver:
      - 8.8.8.8
   fallback:
-     - https://dns.google/dns-query
+     - tls://8.8.8.8:853
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
