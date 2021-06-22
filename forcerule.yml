@@ -36,9 +36,8 @@ dns:
   use-hosts: false
   nameserver:
      - 8.8.8.8
-     - 1.1.1.1
   fallback:
-     - https://1.1.1.1/dns-query
+     - https://8.8.8.8/dns-query
   fake-ip-filter:
      - 'stun.*.*'
      - 'stun.*.*.*'
